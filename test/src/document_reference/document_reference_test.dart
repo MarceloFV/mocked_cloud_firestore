@@ -24,5 +24,9 @@ void main() {
     test('DocumentReference forced generated id', () {
       expect(documentReference.id, 'xxxx');
     });
+    test('DocumentReference stored data', (){
+      var actual = documentReference.getData;
+      expect(actual, {'oi':'oi'});
+    });
   });
 }
